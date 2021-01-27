@@ -5,11 +5,13 @@ import {createStackNavigator} from '@react-navigation/stack';
 import HomeScreen from './screens/home';
 
 const Stack = createStackNavigator();
-const AppNavigator = () => {
+const AppNavigator = (props) => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Home">
+          {(props) => <HomeScreen {...props} />}
+        </Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>
   );
