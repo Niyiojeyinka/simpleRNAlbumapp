@@ -1,8 +1,8 @@
 import * as actions from '../constants';
 
-export const addalbum = (data) => {
+export const addusers = (data) => {
   return {
-    type: actions.ADD_ALBUMS,
+    type: actions.ADD_USERS,
     payload: data,
   };
 };
