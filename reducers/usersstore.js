@@ -1,4 +1,4 @@
-import * as actions from '../constants';
+import * as actions from '../actions/actiontypes';
 
 let initialState = {users: []};
 export const users = (state = initialState, action) => {

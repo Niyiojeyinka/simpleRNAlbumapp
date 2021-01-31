@@ -1,4 +1,4 @@
-import * as actions from '../constants';
+import * as actions from './actiontypes';
 
 export const addalbum = (data) => {
   return {
